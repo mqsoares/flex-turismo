@@ -53,7 +53,7 @@ header h1 {
 }
 
 .hero-area .container {
-    height: 90vh;
+    height: 80vh;
     align-items: center;
     justify-content: space-between;
 
@@ -80,6 +80,10 @@ header h1 {
     height: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.about {
+    margin: 0 0 70px 0;
 }
 
 .about .container {
@@ -112,7 +116,51 @@ header h1 {
     margin-left: -10px;
 }
 
-/* img {
-    display: block;
-    width: 100%;
-} */
+.services {
+    background-color: #122A57;
+    color: #fff;
+}
+
+.services .container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.services .container h2 {
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+.services .container .services-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .container .services-tabs .services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.services .container .services-tabs .services-items img {
+    width: 80%;
+    margin: auto;
+}
+
+.services .container .services-tabs .services-items p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.services .container .services-tabs .services-items a {
+    background-color: #fff;
+    color: #122A57;
+    border-radius: 30px;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
