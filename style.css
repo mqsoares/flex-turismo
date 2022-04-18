@@ -71,7 +71,7 @@ header h1 {
     font-size: 48px;
 }
 
-.hero-area .container .hero-area-write a {
+.button {
     background-color: #122A57;
     color: #fff;
     border-radius: 30px;
@@ -163,4 +163,65 @@ header h1 {
     height: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.plans {
+    padding: 100px 0;
+    /* min-height: 80vh; */
+}
+
+.plans .container {
+    flex-direction: column;
+}
+
+.plans .container h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.plans .container .plans-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.plans .container .plans-card .card-item {
+    border: 5px solid #122A57;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.plans .container .plans-card .card-item h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans .container .plans-card .card-item h3::after {
+    content: "";
+    width: 250%;
+    height: 5px;
+    background-color: #122A57;
+    margin-top: 20px;
+}
+
+.plans .container .plans-card .card-item ul li {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plans .container .plans-card .card-item ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 10px;
 }
