@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+}
+
+header {
+    background-color: #122A57;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+}
