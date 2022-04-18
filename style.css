@@ -81,3 +81,38 @@ header h1 {
     align-items: center;
     justify-content: center;
 }
+
+.about .container {
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about .container .about-write {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about .container .about-write h2 {
+    color: #122A57;
+    font-size: 32px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.about .container .about-write h2::before {
+    content: '';
+    background-color: #122A57;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -10px;
+}
+
+/* img {
+    display: block;
+    width: 100%;
+} */
