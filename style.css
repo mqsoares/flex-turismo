@@ -167,7 +167,6 @@ header h1 {
 
 .plans {
     padding: 100px 0;
-    /* min-height: 80vh; */
 }
 
 .plans .container {
@@ -181,19 +180,19 @@ header h1 {
 
 .plans .container .plans-card {
     display: flex;
-    flex-direction: row;
     align-items: flex-end;
     gap: 20px;
 }
 
 .plans .container .plans-card .card-item {
     border: 5px solid #122A57;
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 50px 20px;
     gap: 50px;
+    width: 100%;
 }
 
 .plans .container .plans-card .card-item h3 {
@@ -216,6 +215,8 @@ header h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
+
 }
 
 .plans .container .plans-card .card-item ul li::before {
@@ -224,4 +225,16 @@ header h1 {
     height: 10px;
     background-color: #122A57;
     margin-right: 10px;
+}
+
+.footer {
+    background-color: #122A57;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .container {
+    justify-content: space-between;
 }
