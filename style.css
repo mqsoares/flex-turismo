@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
 }
@@ -46,4 +50,38 @@ header h1 {
 
 .menu ul li a {
     color: #fff;
+}
+
+.about .container {
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about .container .about-write {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.about .container .about-write h1 {
+    color: #122A57;
+    font-size: 48px;
+    /* margin-bottom: 10px; */
+}
+
+.about .container .about-write p {}
+
+.about .container .about-write a {
+    background-color: #122A57;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    width: 220px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
