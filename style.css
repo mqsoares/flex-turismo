@@ -52,30 +52,26 @@ header h1 {
     color: #fff;
 }
 
-.about .container {
+.hero-area .container {
     height: 90vh;
     align-items: center;
     justify-content: space-between;
 
 }
 
-.about .container .about-write {
+.hero-area .container .hero-area-write {
     min-height: 200px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
-.about .container .about-write h1 {
+.hero-area .container .hero-area-write h1 {
     color: #122A57;
     font-size: 48px;
-    /* margin-bottom: 10px; */
 }
 
-.about .container .about-write p {}
-
-.about .container .about-write a {
+.hero-area .container .hero-area-write a {
     background-color: #122A57;
     color: #fff;
     border-radius: 30px;
