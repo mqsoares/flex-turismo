@@ -52,11 +52,15 @@ header h1 {
     color: #fff;
 }
 
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
 .hero-area .container {
     height: 80vh;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .hero-area .container .hero-area-write {
@@ -271,6 +275,26 @@ header h1 {
 @media (max-width:755px) {
     nav.menu {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        padding: 10px 80px;
+        background-color: #122A57;
+    }
+
+
+    .toggle {
+        display: flex;
+    }
+
+    nav.menu.active {
+        display: flex;
+    }
+
+    nav.menu.active ul {
+        flex-direction: column;
+
     }
 
     .hero-area .container {
@@ -310,6 +334,10 @@ header h1 {
 }
 
 @media (max-width:425px) {
+    .container {
+        padding: 0 30px;
+    }
+
     .container h2 {
         text-align: center;
     }
