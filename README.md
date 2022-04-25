@@ -8,7 +8,7 @@ animação ao passar o mouse no menu e nos botões da page.<br>
 <br>
 Página simples, porém totalmente responsiva <br></p>
 
-<a href="https://mqsoares.github.io/flex-turismo/">Confere aqui</a>
+<a href="https://mqsoares.github.io/flex-turismo/" target="_blank">Confere aqui</a>
 
 <h2>Tecnologias</h2>
 <ul>
@@ -36,5 +36,5 @@ Página simples, porém totalmente responsiva <br></p>
 </div>
 
 <h2> 
-<a href="https://www.linkedin.com/in/mq-soares">Meu Linkedin</a>
+<a href="https://www.linkedin.com/in/mq-soares" target="_blank">Meu Linkedin</a>
 </h2>
