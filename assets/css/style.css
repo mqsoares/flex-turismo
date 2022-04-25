@@ -35,6 +35,8 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 header .container {
@@ -42,8 +44,8 @@ header .container {
     justify-content: space-between;
 }
 
-header h1 {
-    cursor: pointer;
+header a {
+    color: #fff;
 }
 
 .menu ul {
@@ -54,15 +56,30 @@ header h1 {
 
 .menu ul li a {
     color: #fff;
+    position: relative;
+}
+
+.menu ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.5s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
 }
 
 .toggle {
     display: none;
-    cursor: pointer;
 }
 
 .hero-area .container {
-    height: 80vh;
+    height: calc(75vh + 150px);
     align-items: center;
     justify-content: space-between;
 }
@@ -88,6 +105,14 @@ header h1 {
     height: 50px;
     align-items: center;
     justify-content: center;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #122A57;
+    border: 2px solid #122A57;
 }
 
 .about {
@@ -172,6 +197,15 @@ header h1 {
     height: 50px;
     align-items: center;
     justify-content: center;
+
+    transition: 0.3s;
+
+}
+
+.services .container .services-tabs .services-items a:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .plans {
@@ -237,7 +271,7 @@ header h1 {
 
 .footer {
     background-color: #122A57;
-    color: #fff;
+    color: #aaa;
     height: 70px;
     display: flex;
     align-items: center;
@@ -274,25 +308,57 @@ header h1 {
     div.hero-area-image img {
         width: 340px;
     }
+
+    .hero-area .container {
+        height: calc(50vh + 150px);
+    }
 }
 
 @media (max-width:755px) {
     nav.menu {
         display: none;
-        width: 100%;
         position: absolute;
-        top: 100px;
+        width: 100%;
+        top: 0px;
         left: 0px;
         padding: 10px 80px;
         background-color: #122A57;
+        height: 100vh;
     }
 
+    nav.menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
 
     .toggle {
         display: flex;
     }
 
-    nav.menu.active {
+    .container nav.menu+.toggle .close {
+        display: none;
+    }
+
+    .container nav.menu.active+.toggle .open {
+        display: none;
+    }
+
+    .container nav.menu.active+.toggle .close {
+        display: flex;
+    }
+
+    .menu ul li a {
+        font-size: 25px;
+    }
+
+    .menu ul li a::after {
+        top: 35px;
+    }
+
+    .open {
         display: flex;
     }
 
@@ -344,6 +410,10 @@ header h1 {
 
     .container h2 {
         text-align: center;
+    }
+
+    .hero-area .container {
+        height: calc(77vh + 150px);
     }
 
     .card-item .button {
